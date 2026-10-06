@@ -1,6 +1,6 @@
 t h o u g h t s
 
-Tester version 0.5.5
+Tester version 0.5.6
 macOS 14 or newer · Apple Silicon / Intel
 
 Keep your normal thoughts meter installed.
@@ -8,7 +8,7 @@ thoughts keeps the settings and audio permission identity of Thoughts Rolling Pr
 The separate thoughts meter app remains unchanged.
 
 UPDATES AND SUPPORT
-Versions 0.5.2 and earlier need one manual installation of 0.5.5.
+Versions 0.5.2 and earlier need one manual installation of 0.5.6.
 Versions 0.5.3 and later can use the updater already inside the app.
 Afterward, use Check for updates… in the app menu or Settings.
 Background checks run about once a day. If an update is found, the
@@ -86,7 +86,8 @@ Click it to enter Overlay.
 
 OVERLAY
 Overlay starts locked: ordinary clicks pass through to Ableton or the
-app below. Only the small jellyfish responds: click it to leave Overlay.
+app below. Only the jellyfish and top-right pin star respond: click either
+jellyfish to leave Overlay; click the star to pin/unpin the window.
 Hold Command, then drag the bar to move it. Release Command to keep
 it fixed and return ordinary clicks to your DAW. Command temporarily
 reserves the bar for moving; scroll-to-zoom is disabled while locked.
@@ -114,7 +115,7 @@ at -9 LUFS or above and releases below -9.2 LUFS.
 Settings can show Momentary (400 ms) and Short-Term (3 s) below it.
 Double-click Integrated to reset the session without restarting audio
 or changing the number color. A single click waits briefly to distinguish
-it from a double click. In locked Overlay only the jellyfish responds.
+it from a double click. In locked Overlay only the jellyfish and pin star respond.
 The other rolling loudness readings continue.
 
 SIZE
