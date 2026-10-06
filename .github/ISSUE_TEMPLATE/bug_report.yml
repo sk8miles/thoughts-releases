@@ -1,0 +1,52 @@
+name: Bug report
+description: Tell us what happened in thoughts.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing thoughts. This report is public.
+        Do not attach private audio, screenshots, raw crash reports or diagnostic files. Share diagnostics privately with the developer only after reviewing them.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: "For example: 0.5.3 (8)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "For example: macOS 15.7"
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model and chip
+      placeholder: "For example: MacBook Pro, M3 Pro"
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Describe what you were doing and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: repeat
+    attributes:
+      label: Can you repeat it?
+      description: Short steps, if known. It is fine if it happened only once.
+  - type: textarea
+    id: setup
+    attributes:
+      label: Apps and audio setup
+      description: Mention Ableton, OBS, output device, sample rate, Overlay or Rolling if relevant. No account or project names needed.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I checked that this public report contains no private information or diagnostic files.
+          required: true
