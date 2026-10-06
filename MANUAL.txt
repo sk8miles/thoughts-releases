@@ -1,0 +1,193 @@
+t h o u g h t s
+
+Tester version 0.5.5
+macOS 14 or newer · Apple Silicon / Intel
+
+Keep your normal thoughts meter installed.
+thoughts keeps the settings and audio permission identity of Thoughts Rolling Prototype.
+The separate thoughts meter app remains unchanged.
+
+UPDATES AND SUPPORT
+Versions 0.5.2 and earlier need one manual installation of 0.5.5.
+Versions 0.5.3 and later can use the updater already inside the app.
+Afterward, use Check for updates… in the app menu or Settings.
+Background checks run about once a day. If an update is found, the
+control says "1 update available · Install…". Checking can be disabled
+in Settings. Installation always asks you to confirm and restarts the
+app, so wait until you have finished a session or stream.
+Downloads and the update feed use HTTPS and Ed25519 signatures.
+These signatures verify updates; they are not Apple notarization.
+This tester build is ad hoc signed, not notarized. macOS may still
+require renewed system-audio permission after an update. Never disable
+macOS protections. Use only the developer's published release.
+
+Report a bug… opens a small local diagnostics preview. Export saves
+it only where you choose. No audio, screenshots, preset names, audio
+history or automatic upload are included. An optional recent crash
+summary removes paths and report identities. Review it before sharing
+privately with the developer through your existing contact.
+Open bug report… opens a public GitHub form. Describe the problem
+there; do not attach private diagnostics. GitHub requires an account
+to submit. An unclean previous session can also mean Force Quit or
+power loss; it does not prove a crash. The earlier reported crash
+still needs its actual crash report to identify a cause.
+
+START
+Press Command + B in Thoughts to turn Rolling mode on or off.
+It works on the original colored waveform in the main meter.
+There is no separate Rolling window.
+
+Use System Audio in Settings, or Demo to try the gestures without
+capturing another app. thoughts may need its existing
+macOS system-audio permission renewed after a new build.
+
+SELECT
+Drag over the waveform to select audio.
+The view holds still while you edit. Capture and the other meters
+continue normally. When you release, Live follows smoothly again.
+Your selection always refers to the same original samples.
+To keep it easy to edit, the view holds when your selection reaches
+the left margin. Double-click / Esc returns to recent Live audio.
+Drag either edge to trim the selection.
+Drag inside its body to move it without changing its length.
+Double-click the waveform or press Esc to return to the live wave.
+You can still move the window by dragging outside this waveform.
+
+NORMAL ZOOM
+Command-scroll over Thoughts changes the same Scale as Settings.
+It keeps the character, correlation and audio measurements unchanged.
+Points keeps its existing fixed sample scale.
+
+With Rolling OFF, Command-scroll over the waveform zooms recent Live
+audio from 4 seconds down to 250 ms. It keeps moving with incoming
+audio. Scroll back out to return to the full view. This uses the
+existing 2 ms peak history; it does not start recording or save WAV.
+This normal time zoom lasts for the current app session.
+
+ROLLING ZOOM
+Hold Command and scroll with two fingers on your trackpad, or use
+your mouse wheel, while the cursor is over the waveform.
+The audio under your cursor stays in place as the scale changes.
+Zoom ranges from 25 milliseconds to the chosen buffer length.
+Live keeps moving at your chosen zoom. The gesture briefly holds its
+anchor, then advances only with new samples, without catching up or
+accelerating. Editing can leave the view behind recent audio; zooming
+out can leave empty space to the right to keep the cursor anchor.
+Double-click or Esc
+clears the selection and returns to the recent 4-second view.
+Empty space has no recorded audio and cannot start a selection.
+
+CLEAN VIEW
+The bottom settings star and minimize star are hidden. Open Settings
+with Command + comma, or use the existing menu-bar icon. Minimize is
+in the same menu, or use Command + M. One small jellyfish stays still beside the top pin stars.
+In a compact bar it moves to the right, keeping Thoughts clear.
+Click it to enter Overlay.
+
+OVERLAY
+Overlay starts locked: ordinary clicks pass through to Ableton or the
+app below. Only the small jellyfish responds: click it to leave Overlay.
+Hold Command, then drag the bar to move it. Release Command to keep
+it fixed and return ordinary clicks to your DAW. Command temporarily
+reserves the bar for moving; scroll-to-zoom is disabled while locked.
+
+Use Edit Overlay / Show window from the menu bar to unlock for Rolling
+selection, or explicitly start Rolling from that menu. Lock Overlay
+protects your workspace again. Command + R also recovers the window
+while Thoughts is active. Shortcuts are never global DAW shortcuts.
+
+CLEAN VIEW DETAILS
+Time numbers, selection duration and idle Live hints appear only in
+Overlay. Selection, grid and sharing still work in the normal view.
+Brief copy/export confirmations or errors can still appear.
+
+ANALYZER AND LUFS
+The small ↔ at the top-right of the analyzer switches 31 / 63
+bands. It changes frequency detail, not loudness calibration.
+Short-Term (3 seconds) is the large LUFS number on a fresh install.
+Existing users and presets keep their chosen mode. Integrated measures
+since reset. Click the large LUFS number to switch between line color and multicolor.
+The frame is separate and OFF on a fresh install. You can enable
+LUFS colored frame in Settings; saved presets retain their own choice.
+The optional colored frame follows the main LUFS mode: it appears
+at -9 LUFS or above and releases below -9.2 LUFS.
+Settings can show Momentary (400 ms) and Short-Term (3 s) below it.
+Double-click Integrated to reset the session without restarting audio
+or changing the number color. A single click waits briefly to distinguish
+it from a double click. In locked Overlay only the jellyfish responds.
+The other rolling loudness readings continue.
+
+SIZE
+You can resize down to 64 points high. Modules keep their proportions.
+For reading detailed levels, a taller window is easier to use.
+
+GRID
+Command + 4 shows or hides the grid. It does not change snapping.
+Settings has separate Show grid and Snap to grid controls.
+Grid size can be 0.1 s, 0.25 s, 0.5 s or 1 s.
+The drawing shows fewer subdivisions when zoomed out to stay clear.
+Snap still uses your chosen Grid size, even with the grid hidden.
+Hold Command while selecting to bypass snapping.
+This grid uses captured-audio seconds, not Ableton bars or BPM.
+The ruler shows age in captured audio; it is not a clock for gaps.
+
+COPY OR DRAG
+Command + C copies the selected audio as a WAV file.
+In Ableton, click an insertion point on an AUDIO track and use
+Command + V. Command + B in Ableton is not our paste command.
+File pasting depends on the receiving app and its focused view.
+
+To drag out: grab the selection's small TOP BAR, not its body.
+Drop it on an audio track or a Finder folder.
+The drag image is a small preview of the actual selected waveform
+using the current colors, style and display gain. The WAV itself
+keeps its original amplitude.
+If you release before the WAV is ready, Thoughts asks you to drag
+again; the prepared file is reused.
+
+WAV files are stereo Float32, 48 kHz in System Audio / Demo.
+They keep the original selected samples, with no normalization,
+fades or added processing. Copy or drag is what writes a file.
+
+FILES
+Shared files stay in:
+~/Library/Application Support/Thoughts Rolling Prototype/Exports
+Use Show shared WAV files in Settings to find them.
+Choose export folder changes the destination for NEW shared WAV files.
+Use default folder returns to the path above. Existing WAV files never
+move or get deleted. A missing/inaccessible destination shows an error;
+choose an available folder and retry. This choice stays on your Mac,
+not in your themes or a shared build.
+They are kept after quitting so a DAW does not lose its reference.
+In Ableton, use Collect All and Save to bring external samples into
+your project. Manage these files yourself; there is no automatic purge. Deleting a
+shared WAV before a DAW has collected it can break its file reference.
+
+RECENT AUDIO
+Settings offers 30 s, 60 s or 2 min of stereo audio held in RAM.
+New audio replaces the oldest audio.
+Live starts with the original FOUR-second waveform. Command-scroll
+lets you zoom out through the stored buffer and back into a detail.
+Save it before it expires. Expired regions and regions crossing a
+capture interruption cannot be exported.
+
+Changing buffer length clears Rolling history. Turning the mode off
+stops adding samples and removes selection tools, while retaining
+allocated RAM until exit. Reconnecting or changing source may start
+a new Rolling history. Quitting loses audio that was never exported.
+There is no continuous audio recording to disk.
+
+PERFORMANCE
+Rolling uses the existing capture and animation clock.
+A 60 s buffer plus color history uses about 26.3 MB; 2 min about
+52.4 MB, in addition to
+the meter's normal memory. Export needs temporary RAM for the selection.
+System Audio capture can continue while minimized. Demo generation
+follows the existing visual clock and pauses while minimized.
+
+TEST BUILD
+This is an experimental, ad hoc signed build, not Apple-notarized.
+Selection, zoom math, exact WAV export and native file Copy were
+checked. The report states which live drop/gesture tests succeeded.
+Physical trackpad and mouse-wheel zoom should be checked on your Mac.
+Check your samples before relying on the prototype for a recording.
