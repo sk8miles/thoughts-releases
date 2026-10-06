@@ -7,15 +7,15 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for the thoughts tester application.</description>
     <language>en</language>
     <item>
-      <title>thoughts 0.5.3</title>
-      <pubDate>Tue, 06 Oct 2026 06:28:48 GMT</pubDate>
-      <sparkle:version>8</sparkle:version>
-      <sparkle:shortVersionString>0.5.3</sparkle:shortVersionString>
+      <title>thoughts 0.5.4</title>
+      <pubDate>Tue, 06 Oct 2026 07:01:53 GMT</pubDate>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>0.5.4</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/sk8miles/thoughts-releases/releases/download/v0.5.3/thoughts-0.5.3-mac.zip" sparkle:edSignature="zJQeAjBxOfiUzhBR3TcvOaMynw8Jg4O+cZsso/X1SkTwwxTzuHuuWIPHUC/2jU3ZS/k1TPYWsjEA/05L3stICg==" length="2222387" type="application/octet-stream"></enclosure>
+      <enclosure url="https://github.com/sk8miles/thoughts-releases/releases/download/v0.5.4/thoughts-0.5.4-mac.zip" sparkle:edSignature="nJC/+W9zch5nWEGHUI7oQT+ALyHRoMf5bHsAAxEZvHJXfpFokpcFmdqKvjyaq5DSqGIpHfxRTjO+TGAjQp85Cg==" length="2224601" type="application/octet-stream"></enclosure>
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: QZkZS/e2bZWsWjGdqoJX292tP4S8Vy5vtGxKiada/e/B7TIbTo8agyKcKuLtTkkgbIfW21dSZ/x9Ac5nXzxUAg==
+edSignature: 7KGP37dC698pjLcmgwZenuW2xu8RP3s9qcN/ZzG23T5PWTVetiSNRCFj5MYEM+gtXrauUez8VIC9J8Ysf0EpCQ==
 length: 1210
 -->
