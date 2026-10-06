@@ -22,4 +22,4 @@ Use **Report a bug…** inside the app, or [open a bug report](https://github.co
 
 **Issues are public.** Do not post audio, screenshots with private information, raw crash reports, personal paths, email addresses, account identifiers, or complete diagnostic files here. Exported diagnostics stay on your Mac; review them and share privately with the developer through your existing contact if needed.
 
-The reported Ableton/OBS crash is still under investigation. Version 0.5.6 improves compact controls and keeps the Clean stars visible. It does not claim to fix the streaming crash; its actual crash report is still needed.
+The reported Ableton/OBS crash is still under investigation. Version 0.5.7 names the sample mode Catch, adds adaptive seconds guides and improves compact analyzer/LUFS presentation. It preserves the Clean stars and right-side Overlay controls. It does not claim to fix the streaming crash; its actual crash report is still needed.
