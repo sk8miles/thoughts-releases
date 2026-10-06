@@ -10,6 +10,10 @@ Downloads and general bug reports for the thoughts Mac tester app.
 
 ## Downloads
 
+The app is named **thoughts**. Settings and presets from Thoughts Rolling Prototype are preserved.
+
+Read the [user manual](MANUAL.txt).
+
 Use the [Releases page](https://github.com/sk8miles/thoughts-releases/releases) for published builds. A release is ready only when its ZIP and release notes are present.
 
 ## Report a bug
