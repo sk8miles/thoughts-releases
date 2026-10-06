@@ -1,6 +1,6 @@
 t h o u g h t s
 
-Tester version 0.5.6
+Tester version 0.5.7
 macOS 14 or newer · Apple Silicon / Intel
 
 Keep your normal thoughts meter installed.
@@ -8,7 +8,7 @@ thoughts keeps the settings and audio permission identity of Thoughts Rolling Pr
 The separate thoughts meter app remains unchanged.
 
 UPDATES AND SUPPORT
-Versions 0.5.2 and earlier need one manual installation of 0.5.6.
+Versions 0.5.2 and earlier need one manual installation of 0.5.7.
 Versions 0.5.3 and later can use the updater already inside the app.
 Afterward, use Check for updates… in the app menu or Settings.
 Background checks run about once a day. If an update is found, the
@@ -33,9 +33,9 @@ power loss; it does not prove a crash. The earlier reported crash
 still needs its actual crash report to identify a cause.
 
 START
-Press Command + B in Thoughts to turn Rolling mode on or off.
+Press Command + B in Thoughts to turn Catch mode on or off.
 It works on the original colored waveform in the main meter.
-There is no separate Rolling window.
+There is no separate Catch window.
 
 Use System Audio in Settings, or Demo to try the gestures without
 capturing another app. thoughts may need its existing
@@ -58,13 +58,13 @@ Command-scroll over Thoughts changes the same Scale as Settings.
 It keeps the character, correlation and audio measurements unchanged.
 Points keeps its existing fixed sample scale.
 
-With Rolling OFF, Command-scroll over the waveform zooms recent Live
+With Catch OFF, Command-scroll over the waveform zooms recent Live
 audio from 4 seconds down to 250 ms. It keeps moving with incoming
 audio. Scroll back out to return to the full view. This uses the
 existing 2 ms peak history; it does not start recording or save WAV.
 This normal time zoom lasts for the current app session.
 
-ROLLING ZOOM
+CATCH ZOOM
 Hold Command and scroll with two fingers on your trackpad, or use
 your mouse wheel, while the cursor is over the waveform.
 The audio under your cursor stays in place as the scale changes.
@@ -78,11 +78,11 @@ clears the selection and returns to the recent 4-second view.
 Empty space has no recorded audio and cannot start a selection.
 
 CLEAN VIEW
-The bottom settings star and minimize star are hidden. Open Settings
-with Command + comma, or use the existing menu-bar icon. Minimize is
-in the same menu, or use Command + M. One small jellyfish stays still beside the top pin stars.
-In a compact bar it moves to the right, keeping Thoughts clear.
-Click it to enter Overlay.
+Two small jellyfish stay at the right, keeping Thoughts clear.
+Click either to enter Overlay. The top-right star pins/unpins the bar.
+The bottom settings star remains visible in Clean. Open Settings with
+Command + comma, the settings star, or the menu bar. Minimize uses
+Command + M or the menu bar.
 
 OVERLAY
 Overlay starts locked: ordinary clicks pass through to Ableton or the
@@ -92,20 +92,22 @@ Hold Command, then drag the bar to move it. Release Command to keep
 it fixed and return ordinary clicks to your DAW. Command temporarily
 reserves the bar for moving; scroll-to-zoom is disabled while locked.
 
-Use Edit Overlay / Show window from the menu bar to unlock for Rolling
-selection, or explicitly start Rolling from that menu. Lock Overlay
+Use Edit Overlay / Show window from the menu bar to unlock for Catch
+selection, or explicitly start Catch from that menu. Lock Overlay
 protects your workspace again. Command + R also recovers the window
 while Thoughts is active. Shortcuts are never global DAW shortcuts.
 
 CLEAN VIEW DETAILS
-Time numbers, selection duration and idle Live hints appear only in
-Overlay. Selection, grid and sharing still work in the normal view.
-Brief copy/export confirmations or errors can still appear.
+With the Catch grid enabled, seconds and selection duration appear
+in either view. Lines and labels adapt to zoom. A small
+“Double-click to return to Live” hint appears while zoomed or holding
+a selection. Capture continues. Copy/export confirmations remain brief.
 
 ANALYZER AND LUFS
 The small ↔ at the top-right of the analyzer switches 31 / 63
 bands. It changes frequency detail, not loudness calibration.
-Short-Term (3 seconds) is the large LUFS number on a fresh install.
+Integrated is the large LUFS number on a fresh install, matching the
+creator’s current setup. Short-Term (3 seconds) remains available.
 Existing users and presets keep their chosen mode. Integrated measures
 since reset. Click the large LUFS number to switch between line color and multicolor.
 The frame is separate and OFF on a fresh install. You can enable
@@ -120,6 +122,8 @@ The other rolling loudness readings continue.
 
 SIZE
 You can resize down to 64 points high. Modules keep their proportions.
+Wide, shallow bars use more of the analyzer’s height and give slightly
+more width to the waveform. The dB scale and audio remain unchanged.
 For reading detailed levels, a taller window is easier to use.
 
 GRID
@@ -130,7 +134,9 @@ The drawing shows fewer subdivisions when zoomed out to stay clear.
 Snap still uses your chosen Grid size, even with the grid hidden.
 Hold Command while selecting to bypass snapping.
 This grid uses captured-audio seconds, not Ableton bars or BPM.
-The ruler shows age in captured audio; it is not a clock for gaps.
+The ruler counts seconds from the start of the current captured
+history. Labels stay attached to audio and adapt to zoom. It is not
+a clock for gaps and does not synchronize with a DAW transport.
 
 COPY OR DRAG
 Command + C copies the selected audio as a WAV file.
@@ -172,14 +178,14 @@ lets you zoom out through the stored buffer and back into a detail.
 Save it before it expires. Expired regions and regions crossing a
 capture interruption cannot be exported.
 
-Changing buffer length clears Rolling history. Turning the mode off
+Changing buffer length clears Catch history. Turning the mode off
 stops adding samples and removes selection tools, while retaining
 allocated RAM until exit. Reconnecting or changing source may start
-a new Rolling history. Quitting loses audio that was never exported.
+a new Catch history. Quitting loses audio that was never exported.
 There is no continuous audio recording to disk.
 
 PERFORMANCE
-Rolling uses the existing capture and animation clock.
+Catch uses the existing capture and animation clock.
 A 60 s buffer plus color history uses about 26.3 MB; 2 min about
 52.4 MB, in addition to
 the meter's normal memory. Export needs temporary RAM for the selection.
