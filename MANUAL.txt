@@ -1,6 +1,6 @@
 t h o u g h t s
 
-Tester version 0.5.9
+Tester version 0.6.0
 macOS 14 or newer · Apple Silicon / Intel
 
 Keep your normal thoughts meter installed.
@@ -8,7 +8,7 @@ thoughts keeps the settings and audio permission identity of Thoughts Rolling Pr
 The separate thoughts meter app remains unchanged.
 
 UPDATES AND SUPPORT
-Versions 0.5.2 and earlier need one manual installation of 0.5.9.
+Versions 0.5.2 and earlier need one manual installation of 0.6.0.
 Versions 0.5.3 and later can use the updater already inside the app.
 Afterward, use Check for updates… in the app menu or Settings.
 Background checks run about once a day. If an update is found, the
@@ -33,7 +33,9 @@ power loss; it does not prove a crash. The earlier reported crash
 still needs its actual crash report to identify a cause.
 
 START
-Press Command + B in Thoughts to turn Catch mode on or off.
+Click the small [·] icon above the waveform, or press Command + B
+in thoughts, to turn Catch mode on or off.
+Catch starts with a wider 12-second view.
 It works on the original colored waveform in the main meter.
 There is no separate Catch window.
 
@@ -43,11 +45,13 @@ macOS system-audio permission renewed after a new build.
 
 SELECT
 Drag over the waveform to select audio.
-The view holds still while you edit. Capture and the other meters
-continue normally. When you release, Live follows smoothly again.
-Your selection always refers to the same original samples.
-To keep it easy to edit, the view holds when your selection reaches
-the left margin. Double-click / Esc returns to recent Live audio.
+The view holds still when you select or zoom. Capture and the other
+meters continue normally behind it. Releasing the mouse leaves the
+view fixed so you can keep editing the same original samples.
+Double-click / Esc returns to recent Live audio.
+Recorded silence appears as a thin baseline; unavailable history
+stays empty. Selection tints the waveform itself.
+The normal arrow cursor stays unchanged throughout Catch.
 Drag either edge to trim the selection.
 Drag inside its body to move it without changing its length.
 Double-click the waveform or press Esc to return to the live wave.
@@ -69,13 +73,21 @@ Hold Command and scroll with two fingers on your trackpad, or use
 your mouse wheel, while the cursor is over the waveform.
 The audio under your cursor stays in place as the scale changes.
 Zoom ranges from 25 milliseconds to the chosen buffer length.
-Live keeps moving at your chosen zoom. The gesture briefly holds its
-anchor, then advances only with new samples, without catching up or
-accelerating. Editing can leave the view behind recent audio; zooming
-out can leave empty space to the right to keep the cursor anchor.
-Double-click or Esc
-clears the selection and returns to the recent 4-second view.
-Empty space has no recorded audio and cannot start a selection.
+Zoom and selection hold the viewport until you explicitly return to
+Live. Scroll with two fingers without Command to travel through the
+stored history. Panning keeps the exact selected samples unchanged.
+Double-click or Esc clears the selection and returns to the recent
+12-second view. Empty space has no recorded audio and cannot start a
+selection. Old samples expire when the chosen history buffer fills.
+
+LISTEN
+After selecting, hold the small speaker above the waveform to listen
+to that fragment in a loop. Release to stop. Leaving the app, closing
+or minimizing the window also stops it. Preview preparation happens
+once per selection, with short edge ramps on the audition copy only.
+Your WAV keeps the original samples. thoughts excludes its own audio
+from System Audio capture so preview does not record itself; other
+applications' audio continues being captured normally.
 
 CLEAN VIEW
 Two small jellyfish stay at the right, close to LUFS and keeping
@@ -86,13 +98,13 @@ left stars. Minimize uses Command + M or the menu bar.
 
 OVERLAY
 Overlay starts locked: ordinary clicks pass through to Ableton or the
-app below. Only the jellyfish respond: click either to leave Overlay.
+app below. The jellyfish leave Overlay and the [·] icon switches Catch mode.
 Hold Command, then drag the bar to move it. Release Command to keep
 it fixed and return ordinary clicks to your DAW. Command temporarily
 reserves the bar for moving; scroll-to-zoom is disabled while locked.
 
-Use Edit Overlay / Show window from the menu bar to unlock for Catch
-selection, or explicitly start Catch from that menu. Lock Overlay
+Start Catch with its [·] icon or from the menu to unlock waveform
+selection, zoom and listening. Lock Overlay
 protects your workspace again. Command + R also recovers the window
 while Thoughts is active. Shortcuts are never global DAW shortcuts.
 
