@@ -1,6 +1,6 @@
 t h o u g h t s
 
-Tester version 0.5.8
+Tester version 0.5.9
 macOS 14 or newer · Apple Silicon / Intel
 
 Keep your normal thoughts meter installed.
@@ -8,7 +8,7 @@ thoughts keeps the settings and audio permission identity of Thoughts Rolling Pr
 The separate thoughts meter app remains unchanged.
 
 UPDATES AND SUPPORT
-Versions 0.5.2 and earlier need one manual installation of 0.5.8.
+Versions 0.5.2 and earlier need one manual installation of 0.5.9.
 Versions 0.5.3 and later can use the updater already inside the app.
 Afterward, use Check for updates… in the app menu or Settings.
 Background checks run about once a day. If an update is found, the
