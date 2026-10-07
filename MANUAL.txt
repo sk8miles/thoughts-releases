@@ -1,6 +1,11 @@
+QUICK TOUR
+A short English tour appears once. Skip tour, Done or the close button dismisses it.
+Open Quick tour again from the thoughts menu, menu-bar icon or Settings.
+It does not change your preset, start playback or stop audio capture.
+
 t h o u g h t s
 
-Tester version 0.6.0
+Tester version 0.6.2
 macOS 14 or newer · Apple Silicon / Intel
 
 Keep your normal thoughts meter installed.
@@ -8,7 +13,7 @@ thoughts keeps the settings and audio permission identity of Thoughts Rolling Pr
 The separate thoughts meter app remains unchanged.
 
 UPDATES AND SUPPORT
-Versions 0.5.2 and earlier need one manual installation of 0.6.0.
+Versions 0.5.2 and earlier need one manual installation of 0.6.2.
 Versions 0.5.3 and later can use the updater already inside the app.
 Afterward, use Check for updates… in the app menu or Settings.
 Background checks run about once a day. If an update is found, the
@@ -76,6 +81,8 @@ Zoom ranges from 25 milliseconds to the chosen buffer length.
 Zoom and selection hold the viewport until you explicitly return to
 Live. Scroll with two fingers without Command to travel through the
 stored history. Panning keeps the exact selected samples unchanged.
+Trackpad panning is inverted by default. Use Invert trackpad scrolling
+in Catch Settings to change it. Mouse-wheel direction stays unchanged.
 Double-click or Esc clears the selection and returns to the recent
 12-second view. Empty space has no recorded audio and cannot start a
 selection. Old samples expire when the chosen history buffer fills.
