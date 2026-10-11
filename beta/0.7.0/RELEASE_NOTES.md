@@ -1,17 +1,14 @@
-# THOUGHTS 0.7.0 beta — build 27.4
+# THOUGHTS Beta 0.7.0 (build 27.8)
 
-This beta preserves the verified RC2 audio and visual behavior and includes the final tall-window stereo-waveform scaling correction.
+Apple Silicon beta for macOS 14 or later.
 
-Highlights:
-- Stereo Diamond retains its verified Mid/Side geometry, density and persistence unchanged.
-- Thoughts Lines retains chronological same-instant L/R pairs, bounded 96-point history and brief persistence.
-- Catch selection, preview, export, zoom and scrolling remain unchanged.
-- Settings routing, LUFS, True Peak, Analyzer, Overlay and character animations passed the focused regression suite.
-- Separate stereo waveforms remain centered instead of stretching apart in unusually tall windows.
+## Changes
 
-Known distribution limitation:
-- This beta is ad-hoc signed because no Apple Developer ID Application certificate is installed on the build Mac.
-- It is not notarized and has no stapled notarization ticket. macOS Gatekeeper may require an explicit user override.
-- Apple-silicon (arm64), macOS 14 or later.
+- Keeps transparent mode click-through during normal mouse use.
+- Moves the transparent window only with Command + drag.
+- Keeps the pin, jellyfish and Catch controls available in transparent mode.
+- Brightens the Autumn waveform gradient with warm oranges, pale yellow-green and soft white highs.
 
-SHA-256 is provided as a separate asset. The production Sparkle appcast was not changed.
+## Installation
+
+Unzip the download and open `THOUGHTS Beta.app`. This beta is ad-hoc signed and not notarized, so macOS may require Control-click → Open on first launch. Grant Screen & System Audio Recording access when requested.
